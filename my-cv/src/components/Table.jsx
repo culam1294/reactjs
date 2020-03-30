@@ -1,4 +1,6 @@
 import React from "react";
+import '../components/Table.css';
+import TableRow from "./TableRow";
 
 export default function Table() {
   return (
@@ -14,12 +16,7 @@ export default function Table() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+          <TableRow/>
         </tbody>
       </table>
     </div>
