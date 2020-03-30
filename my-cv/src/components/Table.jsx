@@ -7,16 +7,14 @@ export default function Table() {
         <thead>
           <tr>
             <th>Username</th>
-            <th>Password</th>
             <th>Permission</th>
             <th>Sexual</th>
-            <th>Tel</th>
+            <th>Telephone</th>
             
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td></td>
             <td></td>
             <td></td>
             <td></td>
