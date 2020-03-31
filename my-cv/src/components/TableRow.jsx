@@ -1,12 +1,17 @@
 import React from 'react'
 
-export default function TableRow() {
-    return (
-        <tr>
-            <td>cdscsd</td>
-            <td>csdcsdc</td>
-            <td>csdcsdc</td>
-            <td>csdcsdc</td>
+export default function TableRow(props) {
+
+    const Data = props.Data;
+    const showRow =  Data.map((value,key)=>(
+        <tr key={key}>
+            <td>{value.Username}</td>
+            <td>{value.Permission}</td>
+            <td>{value.Sexual}</td>
+            <td>{value.Telephone}</td>
         </tr>
+    ))
+    return (
+        showRow
     )
 }

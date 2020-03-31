@@ -2,9 +2,9 @@ import React from "react";
 import '../components/Table.css';
 import TableRow from "./TableRow";
 
-export default function Table() {
+export default function Table(props) {
   return (
-    <div>
+    
       <table className="table">
         <thead>
           <tr>
@@ -16,9 +16,10 @@ export default function Table() {
           </tr>
         </thead>
         <tbody>
-          <TableRow/>
+          <TableRow 
+          Data={props.Data}
+          />
         </tbody>
       </table>
-    </div>
   );
 }
