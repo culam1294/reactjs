@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 15px;
 }
 
 .App-header {
@@ -15,42 +15,32 @@
 }
 
 /* My button */
-.btn{
+.btn,.btn-1{
   background: rgb(28, 116, 218);
   border-radius: 6px;
   padding: 5px 13px;
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
-  margin: 5px;
+  margin: 0.1em;
 }
-.btn:hover { 
+.btn-1{
+  background: rgb(238, 62, 39);
+}
+.btn:hover,.btn-1:hover { 
   background-color: rgb(8, 63, 126);
 }
 
-.btn:active {
+.btn:active,.btn-1:active {
   background: #5F9BE0;
 }
 /* My button 1 */
-.btn-1{
-  background: rgb(238, 62, 39);
-  border-radius: 6px;
-  padding: 5px 13px;
-  color: #fff;
-  font-size: 1rem;
-  margin: 5px;
-}
-.btn-1:hover { 
-  background-color: rgb(214, 75, 233);
-}
 
-.btn-1:active {
-  background: #5F9BE0;
-}
+
 /* Input */
 .ipt{
   height: 1.5em;
-  width: 10em;
+  width: 15em;
   font-size: 1em;
   margin: 0.3em;
 }

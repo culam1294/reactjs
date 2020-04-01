@@ -1,29 +1,34 @@
 [
     {
+        "Stt": "1",
         "Username": "lamnd94",
         "Permission": "Admin",
         "Sexual": "Male",
         "Telephone": "9830274893"
     },
     {
+        "Stt": "2",
         "Username": "huygl09",
         "Permission": "Manager",
         "Sexual": "Male",
         "Telephone": "39847293487"
     },
     {
+        "Stt": "3",
         "Username": "trungnd09909",
         "Permission": "Nomal",
         "Sexual": "Male",
         "Telephone": "738467834"
     },
     {
+        "Stt": "4",
         "Username": "haivan4343",
         "Permission": "Nomal",
         "Sexual": "Female",
         "Telephone": "327657232"
     },
     {
+        "Stt": "5",
         "Username": "hoathi874",
         "Permission": "Nomal",
         "Sexual": "Female",

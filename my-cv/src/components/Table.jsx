@@ -11,10 +11,12 @@ export default function Table(props) {
       <table className="table">
         <thead>
           <tr>
+            <th>Stt</th>
             <th>Username</th>
             <th>Permission</th>
             <th>Sexual</th>
             <th>Telephone</th>
+            <th>Sửa/Xóa</th>
             
           </tr>
         </thead>

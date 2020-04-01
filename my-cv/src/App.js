@@ -7,46 +7,43 @@ import AddUser from "./components/AddUser";
 import DataJson from "./components/Data.json";
 
 function App() {
+  //state to render UI
+  const [DataUser, setDataUser] = useState([]);
   //Fetching data before
   useEffect(() => {
     if (localStorage.getItem("data") === null) {
       localStorage.setItem("data", JSON.stringify(DataJson));
-      const dataLocal = JSON.parse(localStorage.getItem("data"));
-      setDataUser(dataLocal);
+      let data = JSON.parse(localStorage.getItem("data"));
+      setDataUser(data);
     } else {
-      const dataLocal = JSON.parse(localStorage.getItem("data"));
-      setDataUser(dataLocal);
+      let data = JSON.parse(localStorage.getItem("data"));
+      setDataUser(data);
     }
   }, []);
 
-  //state to render UI
-  const [DataUser, setDataUser] = useState([]);
-
-  //AddUser
+  //Add User
   const getUser = objAdd => {
-    const TG = [...DataUser, objAdd];
-    setDataUser(TG);
-    localStorage.setItem("data", JSON.stringify(TG));
+    let array = [...DataUser, objAdd];
+    setDataUser(array);
+    localStorage.setItem("data", JSON.stringify(array));
   };
-  //Search
+  //Search User
   const searchClick = search => {
-    const array = [];
-    const dataLocal = JSON.parse(localStorage.getItem("data"));
-
-    dataLocal.forEach(item => {
+    let array = [];
+    let data = JSON.parse(localStorage.getItem("data"));
+    data.forEach(item => {
       if (item.Username.indexOf(search) !== -1) {
         array.push(item);
       }
     });
     setDataUser(array);
   };
-
+  //Delete User
   const deleteUser = key => {
-    const dataNew = DataJson.filter(item => {
-      return console.log(item.key);
-      // item.key !== key
-    });
-    console.log(dataNew);
+    let array = [...DataUser];
+    array.splice(key, 1);
+    setDataUser(array);
+    localStorage.setItem("data", JSON.stringify(array));
   };
 
   return (

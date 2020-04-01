@@ -10,6 +10,9 @@ table td {
     border: none;
     border-collapse: collapse;
 }
+table th {
+    background-color: rgb(26, 202, 202);
+}
 
 .table tr>td, 
 .table tr>th {
@@ -18,4 +21,7 @@ table td {
     line-height: 1.42857143;
     vertical-align: top;
     border-top: 1px solid #ddd;
+}
+.table-row{
+    background-color: aquamarine;
 }
