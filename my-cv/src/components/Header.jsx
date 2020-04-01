@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Header() {
     return (
-        <div>
+        <h1 className="App-header">
             Project manager user in my computer
-        </div>
+        </h1>
     )
 }

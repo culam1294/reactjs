@@ -11,8 +11,8 @@ export default function SearchBar(props) {
 
   return (
     <form>
-      <input type="text" placeholder="Search..." onChange={e => onChange(e)} />
-      <button type="button" onClick={() => onClick(search)}>
+      <input className="ipt" type="text" placeholder="Search..." onChange={e => onChange(e)} />
+      <button className="btn" type="button" onClick={() => onClick(search)}>
         Search
       </button>
     </form>
