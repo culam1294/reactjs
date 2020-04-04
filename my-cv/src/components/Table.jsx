@@ -3,15 +3,15 @@ import '../components/Table.css';
 import TableRow from "./TableRow";
 
 export default function Table(props) {
-  const deleteUser =(key)=>{
-    props.deleteUser(key)
+  const deleteUser =Id=>{
+    props.deleteUser(Id)
   }
   return (
     
       <table className="table">
         <thead>
           <tr>
-            <th>Stt</th>
+            <th>ID</th>
             <th>Username</th>
             <th>Permission</th>
             <th>Sexual</th>
@@ -23,7 +23,7 @@ export default function Table(props) {
         <tbody>
           <TableRow 
           Data={props.Data}
-          deleteUser={(key)=>deleteUser(key)}
+          deleteUser={(Id)=>deleteUser(Id)}
           />
         </tbody>
       </table>
