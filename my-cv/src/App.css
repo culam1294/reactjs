@@ -44,3 +44,20 @@
   font-size: 1em;
   margin: 0.3em;
 }
+.redirect-ul{
+  list-style: none;
+  text-decoration: none;
+  background-color: rgb(128, 128, 240);
+  padding: 1em;
+}
+.redirect-ul li{
+  text-decoration: none;
+  display: inline;
+  margin: 1em;
+  font-size: 1.5em;
+}
+.selected{
+  background-color: #5F9BE0;
+}
+
+

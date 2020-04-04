@@ -11,17 +11,17 @@ table td {
     border-collapse: collapse;
 }
 table th {
-    background-color: rgb(26, 202, 202);
+    background-color: rgb(48, 196, 196);
 }
 
 .table tr>td, 
 .table tr>th {
     border: 1px solid #ddd;
     padding: 8px;
-    line-height: 1.42857143;
+    line-height: 2;
     vertical-align: top;
     border-top: 1px solid #ddd;
 }
 .table-row{
-    background-color: aquamarine;
+    background-color: rgb(241, 246, 247);
 }
