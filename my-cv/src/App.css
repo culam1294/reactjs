@@ -47,7 +47,7 @@
 .redirect-ul{
   list-style: none;
   text-decoration: none;
-  background-color: rgb(128, 128, 240);
+  background-color: rgb(242, 242, 248);
   padding: 1em;
 }
 .redirect-ul li{
@@ -56,8 +56,8 @@
   margin: 1em;
   font-size: 1.5em;
 }
-.selected{
-  background-color: #5F9BE0;
+.active{
+  background-color: rgb(16, 199, 223);
 }
 
 
