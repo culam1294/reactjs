@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useRouteMatch } from "react-router-dom";
+import "./MenuLink.css";
 
 export default function MenuLink({ label, to, activeOnlyWhenExact }) {
   let match = useRouteMatch({
@@ -8,19 +9,11 @@ export default function MenuLink({ label, to, activeOnlyWhenExact }) {
   });
 
   return (
-    <div className={match ? "active" : ""}>
-      {match && "*"}
-      <Link
-        style={{
-          textDecoration: "none",
-          margin: "5px",
-          fontSize: "22px",
-          padding: "7px"
-        }}
-        to={to}
-      >
-        {label}
-      </Link>
-    </div>
+    <ul className="link">
+      <li className={match ? "active" : ""}>
+        {match && ""}
+        <Link to={to}>{label}</Link>
+      </li>
+    </ul>
   );
 }

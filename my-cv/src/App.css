@@ -15,7 +15,8 @@
 }
 
 /* My button */
-.btn,.btn-1{
+.btn,
+.btn-1 {
   background: rgb(28, 116, 218);
   border-radius: 6px;
   padding: 5px 13px;
@@ -24,40 +25,45 @@
   font-size: 1rem;
   margin: 0.1em;
 }
-.btn-1{
+.btn-1 {
   background: rgb(238, 62, 39);
 }
-.btn:hover,.btn-1:hover { 
+.btn:hover,
+.btn-1:hover {
   background-color: rgb(8, 63, 126);
 }
 
-.btn:active,.btn-1:active {
-  background: #5F9BE0;
+.btn:active,
+.btn-1:active {
+  background: #5f9be0;
 }
 /* My button 1 */
 
-
 /* Input */
-.ipt{
+.ipt {
   height: 1.5em;
   width: 15em;
   font-size: 1em;
   margin: 0.3em;
 }
-.redirect-ul{
+.redirect-ul {
   list-style: none;
   text-decoration: none;
   background-color: rgb(242, 242, 248);
   padding: 1em;
 }
-.redirect-ul li{
+.redirect-ul li {
   text-decoration: none;
   display: inline;
   margin: 1em;
   font-size: 1.5em;
 }
-.active{
-  background-color: rgb(16, 199, 223);
+
+.menu {
+  display: inline-flex;
+  background-color: rgb(142, 240, 253);
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
-

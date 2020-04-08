@@ -1,5 +1,5 @@
 import React from "react";
-import '../components/Table.css';
+import './Table.css';
 import TableRow from "./TableRow";
 
 export default function Table(props) {
