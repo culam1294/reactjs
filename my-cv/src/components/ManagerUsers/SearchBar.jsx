@@ -10,7 +10,7 @@ export default function SearchBar(props) {
   };
 
   return (
-    <form>
+    <form >
       <input
         className="ipt"
         type="text"

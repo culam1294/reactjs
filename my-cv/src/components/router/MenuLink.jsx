@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useRouteMatch } from "react-router-dom";
-import "./MenuLink.css";
 
 export default function MenuLink({ label, to, activeOnlyWhenExact }) {
   let match = useRouteMatch({

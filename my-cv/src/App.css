@@ -1,8 +1,6 @@
-.App {
+.App{
   text-align: center;
-  font-size: 15px;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 5rem;
@@ -35,7 +33,7 @@
 
 .btn:active,
 .btn-1:active {
-  background: #5f9be0;
+  background: #82b2e7;
 }
 /* My button 1 */
 
@@ -46,24 +44,43 @@
   font-size: 1em;
   margin: 0.3em;
 }
-.redirect-ul {
-  list-style: none;
-  text-decoration: none;
-  background-color: rgb(242, 242, 248);
-  padding: 1em;
+
+
+.site-layout-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 800px;
 }
-.redirect-ul li {
-  text-decoration: none;
-  display: inline;
-  margin: 1em;
-  font-size: 1.5em;
+#components-layout-demo-top .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+.logo {
+  height: 31px;
+  float: left;
+}
+  /* [data-theme="dark"] .site-layout-content {
+    background: #141414;
+  }
+  [data-theme="dark"] .logo {
+    background: rgba(255,255,255,0.3);
+  } */
+.avatar{
+  align-items: center;
+  display: flex;
+}
+/* carousel */
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #b4b9c2;
+  overflow: hidden;
 }
 
-.menu {
-  display: inline-flex;
-  background-color: rgb(142, 240, 253);
-  width: 1000px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.ant-carousel .slick-slide h3 {
+  color: rgb(40, 4, 245);
 }
