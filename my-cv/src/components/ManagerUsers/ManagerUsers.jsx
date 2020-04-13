@@ -5,12 +5,7 @@ import Header from "./Header";
 import SearchBar from "./SearchBar";
 import Table from "./Table";
 import AddUser from "./AddUser";
-////////////////
-const s = "javascriptloops";
-const k = 'ueoai';
 
-
-///////////////////
 export default function ManagerUsers() {
 
 //state to render UI
