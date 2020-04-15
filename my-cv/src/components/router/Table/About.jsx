@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Table, Tag } from "antd";
+import FormAddUser from "./FormAddUser";
 
 const { Title } = Typography;
 const columns = [
@@ -75,9 +76,7 @@ const data = [
   },
 ];
 
-data.forEach((item) => {
-  // console.log(item.key);
-});
+
 
 const onClick = () => {
   // console.log("da xoa");
@@ -89,6 +88,7 @@ export default function About() {
         Bảng quản lý users
       </Title>
       <Table columns={columns} dataSource={data} />
+      <FormAddUser/>
     </div>
   );
 }

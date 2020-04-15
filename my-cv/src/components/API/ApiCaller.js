@@ -1,14 +1,10 @@
 import axios from "axios";
-import * as Config from "./Config";
+import api from "./api";
 
-export default async function callApi(endpoint, method = "GET", body) {
-  try {
-    return axios({
-      method: method,
-      url: `${Config.API_URL}/${endpoint}`,
-      data: body,
-    });
-  } catch (err) {
-    console.log(err);
-  }
+export default function callApi(method = "GET", endpoint, item) {
+  return axios({
+    method: method,
+    url: `${api}/${endpoint}`,
+    data: item,
+  });
 }

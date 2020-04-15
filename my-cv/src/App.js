@@ -4,7 +4,7 @@ import "antd/dist/antd.css";
 import { Layout, Menu,Avatar } from "antd";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ManagerUsers from "./components/ManagerUsers/ManagerUsers";
-import About from './components/About'
+import About from './components/router/Table/About'
 import Home from "./components/Home";
 import ListItem from "./components/ListItem";
 
