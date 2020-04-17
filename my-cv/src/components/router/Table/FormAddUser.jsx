@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Form, Input, Button, Select, InputNumber, Switch } from "antd";
-import { CloseSquareTwoTone, EditTwoTone,PoweroffOutlined } from "@ant-design/icons";
+import { Form, Input, Button, Select, InputNumber } from "antd";
+import { CloseSquareTwoTone, EditTwoTone } from "@ant-design/icons";
 import callApi from "./../../API/ApiCaller";
 
 function FormAddUser() {
