@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Table, Tag } from "antd";
-import FormAddUser from "./FormAddUser";
+import FormAddUser from "../components/router/Table/FormAddUser";
 
 const { Title } = Typography;
 const columns = [

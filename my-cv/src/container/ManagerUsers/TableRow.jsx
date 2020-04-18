@@ -1,6 +1,12 @@
 import React from "react";
+import {useSelector, useDispatch} from 'react-redux';
+import  {changeStatus} from '../../action/boolean';
 
 export default function TableRow(props) {
+
+  const counter = useSelector((state) => state.count);
+  const dispatch = useDispatch();
+
   const deleteUser = Id => {
     props.deleteUser(Id);
   };
@@ -20,5 +26,6 @@ export default function TableRow(props) {
       </td>
     </tr>
   ));
-  return showRow;
+  return <button className="btn" onClick={()=>dispatch(changeStatus())}>Sửa</button>
+  ;
 }
