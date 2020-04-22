@@ -11,7 +11,6 @@ import {
   InputNumber,
 } from "antd";
 import callApi from "../../api/ApiCaller";
-import FormAdd from "./FormAdd";
 
 const columns = [
   {
@@ -100,8 +99,8 @@ export default function ManagerProducts() {
         <Form.Item>
           <Button type="primary">Add</Button>
         </Form.Item>
+
       </Form>
-      <FormAdd/>
     </div>
   );
 }
