@@ -10,7 +10,8 @@ import {
   DatePicker,
   InputNumber,
 } from "antd";
-import callApi from "../api/ApiCaller";
+import callApi from "../../api/ApiCaller";
+import FormAdd from "./FormAdd";
 
 const columns = [
   {
@@ -64,7 +65,7 @@ const columns = [
 
 export default function ManagerProducts() {
   const [data, setData] = useState();
-  const [isLoad, setIsLoad] = useState(true);
+  const [isLoad, setIsLoad] = useState(true);  
 
   useEffect(() => {
     async function fetchData() {
@@ -79,7 +80,7 @@ export default function ManagerProducts() {
 
       <Form labelCol={{ span: 4 }} wrapperCol={{ span: 40 }} layout="inline">
         <Form.Item>
-          <Input placeholder="Product" />
+          <Input  placeholder="Product" />
         </Form.Item>
         <Form.Item>
           <InputNumber placeholder="Cost" />
@@ -100,6 +101,7 @@ export default function ManagerProducts() {
           <Button type="primary">Add</Button>
         </Form.Item>
       </Form>
+      <FormAdd/>
     </div>
   );
 }
