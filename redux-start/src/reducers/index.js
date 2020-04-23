@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 import Counter from './Counter';
-import Login from './isLogin';
+import load from './isLoad';
 
 const joinReducers = combineReducers({
     count : Counter,
-    login : Login
+    load : load
 });
 export default joinReducers;

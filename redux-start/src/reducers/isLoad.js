@@ -1,9 +1,9 @@
-const login = (state = false, action) => {
+const isLoad = (state = true, action) => {
   switch (action.type) {
-    case 'LOGIN':
+    case 'IS_LOAD':
       return !state;
     default:
       return state;
   }
 };
-export default login;
+export default isLoad;
