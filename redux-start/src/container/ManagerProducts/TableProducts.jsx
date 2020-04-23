@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "antd/dist/antd.css";
-import { Table, Tag, Button } from "antd";
+import { Table, Tag, Button, Typography } from "antd";
 import callApi from "../../api/ApiCaller";
+const { Title } = Typography;
 
 const columns = [
   {
@@ -22,17 +23,12 @@ const columns = [
     key: "description",
   },
   {
-    title: "JoinDay",
-    dataIndex: "joinday",
-    key: "joinday",
-  },
-  {
     title: "Stock",
     key: "stock",
     dataIndex: "stock",
     render: (stock) =>
       stock ? (
-        <Tag color="geekblue">In Stock</Tag>
+        <Tag color="green">In Stock</Tag>
       ) : (
         <Tag color="error">Out Stock</Tag>
       ),
@@ -59,10 +55,21 @@ export default function TableProducts() {
 
   useEffect(() => {
     async function fetchData() {
-      await callApi("get", "products", null).then((res) => setData(res.data));
+      await callApi("get", "products", null)
+        .then((res) => setData(res.data))
+        .catch((err) => console.log(err));
       setIsLoad(false);
     }
     fetchData();
   }, []);
-  return <Table loading={isLoad} columns={columns} dataSource={data} />;
+
+  return (
+    <Table
+      title={() => <Title level={2}>Table Manager product list </Title>}
+      bordered={true}
+      loading={isLoad}
+      columns={columns}
+      dataSource={data}
+    />
+  );
 }

@@ -1,13 +1,13 @@
 import React from "react";
 import "antd/dist/antd.css";
 import TableProducts from "./TableProducts";
-import FormProducts from "./FormProducts";
+import ModalForm from "./ModalForm";
 
 export default function ManagerProducts() {
   return (
     <>
       <TableProducts />
-      <FormProducts/>
+      <ModalForm/>
     </>
   );
 }
