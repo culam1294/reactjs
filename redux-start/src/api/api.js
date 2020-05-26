@@ -1,4 +1,4 @@
 
-const api = "https://5e85807044467600161c6466.mockapi.io/data";
+const API = "https://5e85807044467600161c6466.mockapi.io/data";
 
-export default api;
+export default API;

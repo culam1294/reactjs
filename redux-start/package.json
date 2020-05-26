@@ -2,7 +2,6 @@
   "name": "redux-start",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://culam1294.github.io/reactjs",
   "dependencies": {
     "@ant-design/icons": "^4.0.6",
     "@testing-library/jest-dom": "^4.2.4",
@@ -15,8 +14,10 @@
     "react-dom": "^16.13.1",
     "react-hook-form": "^5.5.0",
     "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

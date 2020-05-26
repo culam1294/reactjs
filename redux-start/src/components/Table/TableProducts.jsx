@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "antd/dist/antd.css";
 import { Table, Tag, Button, Typography } from "antd";
 import callApi from "../../api/ApiCaller";
+
 const { Title } = Typography;
 
 const columns = [
@@ -15,12 +16,15 @@ const columns = [
     title: "Cost",
     dataIndex: "cost",
     key: "cost",
-    render: (cost) => cost + "$",
+    render: (cost) => <p style={{ fontWeight: "bold" }}>{`${cost} $`}</p>,
   },
   {
     title: "Description",
     dataIndex: "description",
     key: "description",
+    render: (description) => (
+      <p style={{ fontStyle: "italic" }}>{description}</p>
+    ),
   },
   {
     title: "Stock",
@@ -30,7 +34,7 @@ const columns = [
       stock ? (
         <Tag color="green">In Stock</Tag>
       ) : (
-        <Tag color="error">Out Stock</Tag>
+        <Tag color="orange">Out Stock</Tag>
       ),
   },
   {
@@ -38,10 +42,14 @@ const columns = [
     key: "action",
     render: () => (
       <span>
-        <Button type="primary" size="small">
+        <Button
+          primary="true"
+          size="small"
+          style={{ margin: 5, border: "1px solid blue" }}
+        >
           Edit
         </Button>
-        <Button type="danger" size="small">
+        <Button danger size="small">
           Delete
         </Button>
       </span>
@@ -55,7 +63,7 @@ export default function TableProducts() {
 
   useEffect(() => {
     async function fetchData() {
-      await callApi("get", "products", null)
+      await callApi("get", "table", null)
         .then((res) => setData(res.data))
         .catch((err) => console.log(err));
       setIsLoad(false);
@@ -65,7 +73,7 @@ export default function TableProducts() {
 
   return (
     <Table
-      title={() => <Title level={2}>Table Manager product list </Title>}
+      title={() => <Title type="danger">TABLE MANAGEMENT</Title>}
       bordered={true}
       loading={isLoad}
       columns={columns}

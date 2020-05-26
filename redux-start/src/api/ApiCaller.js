@@ -1,10 +1,10 @@
 import axios from "axios";
-import api from "./api";
+import API from "./API";
 
-export default function callapi(method = "GET", endpoint, item) {
+export default function CallAPI(method = "GET", endpoint, item) {
   return axios({
     method: method,
-    url: `${api}/${endpoint}`,
+    url: `${API}/${endpoint}`,
     data: item,
   });
 }

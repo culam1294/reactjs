@@ -1,9 +1,11 @@
-import { combineReducers } from 'redux';
-import Counter from './Counter';
-import load from './isLoad';
+import { combineReducers } from "redux";
+import login from "./IsLogin";
+import list from "./List";
+import selectMenu from "./SelectMenu";
 
 const joinReducers = combineReducers({
-    count : Counter,
-    load : load
+  login: login,
+  list: list,
+  selectMenu: selectMenu,
 });
 export default joinReducers;
